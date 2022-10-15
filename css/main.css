@@ -128,14 +128,20 @@ footer a:first-child {
   background-color: var(--btn-secondary);
 }
 
-@media screen and (max-width: 420px) {
-  h1 {
-    font-size: 60px;
-  }
-}
-
 @media screen and (min-width: 992px) {
   .mob-theme-toggle {
     display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mob-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 60px;
   }
 }

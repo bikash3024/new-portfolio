@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light-theme">
 
 <head>
     <meta charset="UTF-8">
@@ -16,101 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <title>Heikrujam Bikash</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
-<style>
-    @font-face {
-        font-family: League-Regular;
-        src: url("./fonts/LeagueGothic-Regular.otf") format("opentype");
-    }
 
-    :root {
-        --grey-dark: #545454;
-        --just-black: #000000;
-        --just-white: #ffffff;
-        --btn-bg: #f4f1ee;
-    }
-
-    body,
-    p,
-    a {
-        font-family: sans-serif;
-        color: var(--grey-dark);
-        font-weight: normal;
-        text-decoration: none;
-    }
-
-    body {
-        background: url(images/background-main.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        min-height: 100vh;
-    }
-
-    body::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        z-index: -1;
-        opacity: 0.9;
-        background-color: white;
-    }
-
-
-    h1 {
-        font-family: League-Regular, sans-serif;
-        font-size: 80px;
-        color: var(--just-black);
-        font-weight: bold;
-    }
-
-    .navbar a {
-        font-family: League-Regular, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .navbar {
-        max-width: 1140px;
-        margin: 0 auto;
-    }
-
-    #main-content {
-        min-height: calc(61vh);
-    }
-
-    #main-content .col-md-10 {
-        max-width: 80%;
-    }
-
-    footer {
-        padding: 20px 0;
-    }
-
-    footer a {
-        padding: 0 10px;
-    }
-
-    footer a:first-child {
-        padding-left: 0;
-    }
-
-    .raised-link {
-        display: inline-block;
-        background-color: var(--btn-bg);
-        padding: 1px 10px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .raised-link:hover {
-        color: var(--just-black);
-        font-weight: bold;
-    }
-</style>
 
 <body>
     <header class="pt-5 pb-5">
@@ -135,6 +43,16 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item pl-md-3">
+                            <a id="toggle-theme" class="nav-link nav-svg" aria-label="Turn On Light Mood">
+                                <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleTheme()" width="24" height="24"
+                                    style="cursor: pointer;" viewBox="0 0 24 24">
+                                    <path
+                                        d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm2 0c0-5.514 4.486-10 10-10v20c-5.514 0-10-4.486-10-10z">
+                                    </path>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -204,8 +122,7 @@
             </div>
         </div>
     </section>
-
-
+    <script src="/js/theme.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,118 @@
+
+    @font-face {
+        font-family: League-Regular;
+        src: url("/fonts/LeagueGothic-Regular.otf") format("opentype");
+    }
+
+    .light-theme {
+        --secondary-slate: #545454;
+        --primary-slate: #000000;
+        --just-white: #ffffff;
+        --main-bg: #F2F5EA;
+        --btn-primary: #D6DBD2;
+        --btn-secondary: #BBC7A4;
+    }
+
+    .dark-theme {
+        --secondary-slate: #fffcf2;
+        --primary-slate: #fffcf2;
+        --just-white: #ffffff;
+        --main-bg: #0a192f;
+        --btn-primary:#BBC7A4;
+        --btn-secondary:  #D6DBD2;
+    }
+    .dark-theme svg {
+        fill: var(--just-white)
+    }
+
+    body,
+    p,
+    a {
+        font-family: sans-serif;
+        color: var(--secondary-slate);
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+
+
+    body {
+        background: url(/images/background-main.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    html::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+        opacity: 0.9;
+        background-color: var(--main-bg);
+    }
+
+    .dark-theme::after {
+        opacity: 0.9;
+        background-color: var(--main-bg);
+    }
+
+
+    h1 {
+        font-family: League-Regular, sans-serif;
+        font-size: 80px;
+        color: var(--primary-slate);
+        font-weight: bold;
+    }
+    navbar-brand a {
+        color: var(--primary-slate);
+    }
+
+    .navbar a {
+        color: var(--primary-slate);
+        font-family: League-Regular, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .navbar {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    #main-content {
+        min-height: calc(61vh);
+    }
+
+    #main-content .col-md-10 {
+        max-width: 80%;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer a {
+        padding: 0 10px;
+    }
+
+    footer a:first-child {
+        padding-left: 0;
+    }
+
+    .raised-link {
+        display: inline-block;
+        background-color: var(--btn-primary);
+        padding: 1px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .raised-link:hover {
+        color: var(--primary-slate);
+        background-color: var(--btn-secondary);
+    }

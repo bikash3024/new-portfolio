@@ -59,14 +59,27 @@ html::after {
   opacity: 0.9;
   background-color: var(--main-bg);
 }
-
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.dark-theme .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  border-color: var(--just-white);
+  outline: var(--just-white);
+}
 h1 {
   font-family: League-Regular, sans-serif;
   font-size: 80px;
   color: var(--primary-slate);
   font-weight: bold;
 }
-navbar-brand a {
+.navbar-brand a {
   color: var(--primary-slate);
 }
 
@@ -118,5 +131,11 @@ footer a:first-child {
 @media screen and (max-width: 420px) {
   h1 {
     font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mob-theme-toggle {
+    display: none;
   }
 }

@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: League-Regular;
+    src: url("../fonts/LeagueGothic-Regular.otf") format("opentype");
+}
     .light-theme {
         --secondary-slate: #545454;
         --primary-slate: #000000;
@@ -32,7 +35,7 @@
 
 
     body {
-        background: url(images/background-main.jpg) no-repeat center center fixed;
+        background: url("../images/background-main.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

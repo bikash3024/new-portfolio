@@ -128,6 +128,10 @@ footer a:first-child {
   background-color: var(--btn-secondary);
 }
 
+.profile-link:hover{
+  transform: translateY(-5px);
+}
+
 @media screen and (min-width: 992px) {
   .mob-theme-toggle {
     display: none;
